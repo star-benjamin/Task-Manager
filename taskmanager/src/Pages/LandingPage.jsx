@@ -31,7 +31,7 @@ function LandingPage() {
   return (
     <div className="flex flex-col md:flex-row space-x-5 lg:space-x-50">
       <TaskInputForm addTask={addTask} />
-      <TaskDisplay tasks={tasks}  />
+      <TaskDisplay tasks={tasks} updateTaskStatus={updateTaskStatus} removeTask={removeTask} />
     </div>
   );
 }
